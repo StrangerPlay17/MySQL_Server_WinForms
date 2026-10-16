@@ -398,7 +398,6 @@
         private Button button_test_connection;
         private DataGridView dataGridView;
         private Label label_3;
-        private Label id_product_label;
         private Label label_2;
         private MaskedTextBox maskedTextBox1;
         private MaskedTextBox maskedTextBox2;

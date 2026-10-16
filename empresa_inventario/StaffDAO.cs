@@ -44,7 +44,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // INSERT
-        public bool Insertar(string nombre, string cargo) // Método para insertar un nuevo registro en CatPersonal
+        public bool Insert(string nombre, string cargo) // Método para insertar un nuevo registro en CatPersonal
         {
             Conexion conexion = new Conexion();           // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 
@@ -78,7 +78,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // UPDATE
-        public bool Actualizar(int id, string nombre, string cargo) // Método para actualizar un registro de CatPersonal mediante su ID
+        public bool Update(int id, string nombre, string cargo) // Método para actualizar un registro de CatPersonal mediante su ID
         {
             Conexion conexion = new Conexion();                    // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 
@@ -119,7 +119,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // DELETE
-        public bool Eliminar(int id) // Método para eliminar un registro de CatPersonal mediante su ID
+        public bool Delete(int id) // Método para eliminar un registro de CatPersonal mediante su ID
         {
             Conexion conexion = new Conexion(); // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 

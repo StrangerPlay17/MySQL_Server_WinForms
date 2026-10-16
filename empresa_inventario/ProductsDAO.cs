@@ -49,7 +49,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // INSERT
-        public bool Insertar(string descripcion)   // Método para insertar un nuevo producto en CatProducto
+        public bool Insert(string descripcion)   // Método para insertar un nuevo producto en CatProducto
         {
             Conexion conexion = new Conexion();   // Se crea el objeto de la clase "Conexion" para la conexión a MySQL
 
@@ -82,7 +82,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // UPDATE
-        public bool Actualizar(int id, string descripcion) // Método para actualizar un producto en CatProducto
+        public bool Update(int id, string descripcion) // Método para actualizar un producto en CatProducto
                                                            // donde modifica la descripción del producto por su ID
         {
             Conexion conexion = new Conexion();            // Se crea el objeto de la clase "Conexion" para la conexión a MySQL
@@ -122,7 +122,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // DELETE
-        public bool Eliminar(int id)              // Método para eliminar un producto de CatProducto
+        public bool Delete(int id)              // Método para eliminar un producto de CatProducto
                                                   // donde elimina el registro identificado por su ID
         {
             Conexion conexion = new Conexion();  // Se crea el objeto de la clase "Conexion" para la conexión a MySQL

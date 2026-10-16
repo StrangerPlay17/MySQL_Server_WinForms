@@ -428,7 +428,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo 
                             // Insert de la clase para insertar el producto en la BD
-                            guardado = productsDAO.Insertar(descripcion);
+                            guardado = productsDAO.Insert(descripcion);
                             break;
                         }
 
@@ -456,7 +456,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo 
                             // Insert de la clase para insertar al empleado en la BD
-                            guardado = staffDAO.Insertar(nombre, cargo);
+                            guardado = staffDAO.Insert(nombre, cargo);
                             break;
                         }
 
@@ -482,7 +482,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo 
                             // Insert de la clase para insertar el registro del inventario en la BD
-                            guardado = inventoryDAO.Insertar(
+                            guardado = inventoryDAO.Insert(
                                 idProducto, idPersonal, cantidad);
 
                             break;
@@ -539,7 +539,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo Update de la clase
                             // para actualizar el registro del producto en la BD
-                            actualizado = productsDAO.Actualizar(id, descripcion);
+                            actualizado = productsDAO.Update(id, descripcion);
                             break;
                         }
 
@@ -567,7 +567,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo Update de la clase
                             // para actualizar el registro del personal en la BD
-                            actualizado = staffDAO.Actualizar(id, nombre, cargo);
+                            actualizado = staffDAO.Update(id, nombre, cargo);
                             break;
                         }
 
@@ -592,7 +592,7 @@ namespace empresa_inventario    // Define el espacio de nombres principal
 
                             // Al pasar las validaciones, se llama al metodo Update de la clase
                             // para actualizar el registro del inventario en la BD
-                            actualizado = inventoryDAO.Actualizar(
+                            actualizado = inventoryDAO.Update(
                                 id, idProducto, idPersonal, cantidad);
 
                             break;
@@ -644,15 +644,15 @@ namespace empresa_inventario    // Define el espacio de nombres principal
                 switch (moduloActual)    // De acuerdo al modulo actual (el ID a eliminar correspondra con la seccion actual)
                 {
                     case Modulo.Productos:     // Elimina el producto que corresponde al ID ingresado
-                        eliminado = productsDAO.Eliminar(id);
+                        eliminado = productsDAO.Delete(id);
                         break;
 
                     case Modulo.Personal:     // Elimina el personal que corresponde por su ID
-                        eliminado = staffDAO.Eliminar(id);
+                        eliminado = staffDAO.Delete(id);
                         break;
 
                     case Modulo.Inventario:   // Elimina el registro del inventario por su ID
-                        eliminado = inventoryDAO.Eliminar(id);
+                        eliminado = inventoryDAO.Delete(id);
                         break;
                 }
 

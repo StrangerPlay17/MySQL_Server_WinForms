@@ -103,7 +103,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // INSERT
-        public bool Insertar(int idProducto, int idPersonal, int cantidad) // Método para insertar un nuevo registro en tblInventario
+        public bool Insert(int idProducto, int idPersonal, int cantidad) // Método para insertar un nuevo registro en tblInventario
         {
             Conexion conexion = new Conexion(); // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 
@@ -145,7 +145,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // UPDATE
-        public bool Actualizar(int id, int idProducto, int idPersonal, int cantidad) // Método para actualizar un registro de inventario mediante su ID
+        public bool Update(int id, int idProducto, int idPersonal, int cantidad) // Método para actualizar un registro de inventario mediante su ID
         {
             Conexion conexion = new Conexion(); // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 
@@ -193,7 +193,7 @@ namespace empresa_inventario
 
         // ---------------------------------------------------------------------------------------------------
         // DELETE
-        public bool Eliminar(int id) // Método para eliminar un registro del inventario mediante su ID
+        public bool Delete(int id) // Método para eliminar un registro del inventario mediante su ID
         {
             Conexion conexion = new Conexion(); // Se crea una instancia de la clase Conexion para obtener la conexión a MySQL
 
