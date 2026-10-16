@@ -1,11 +1,11 @@
-﻿namespace empresa_inventario
+﻿namespace empresa_inventario     // Espacio de nombres del proyecto 
 {
-    partial class Form1
+    partial class Form1          // Clase parcial que representa el formulario principal de la app
     {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null;    // Contenedor que almacena los componentes utilizados en el forms
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -13,13 +13,13 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && (components != null))  // Verifica si se deben liberar los recursos y si el contenedor existe
             {
-                components.Dispose();
+                components.Dispose();   // Libera los componentes del forms
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing);    // Ejecuta el método Dispose de la clase base
         }
-
+        // Codigo de los componentes de la interfaz generado por el diseñador de WinForms de forma automatica 
         #region Windows Form Designer generated code
 
         /// <summary>
